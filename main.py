@@ -16,3 +16,4 @@ if user_input == "4":
     for i in range(100):
         print(st.elapsed_time(), end='\r')
         time.sleep(.2)
+        
