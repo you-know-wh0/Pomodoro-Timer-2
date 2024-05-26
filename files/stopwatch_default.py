@@ -23,7 +23,7 @@ def pomodoro_timer():
         if cycles % 4 == 0:
             print("Time for a long break!")
             mixer.init()
-            mixer.music.load('/Users/lmh/Downloads/Clock-chimes-sound/ting-tong.mp3')
+            mixer.music.load(r'ting-tong.mp3')
             mixer.music.play()
             time.sleep(4)
             mixer.music.stop()
@@ -37,7 +37,7 @@ def pomodoro_timer():
         else:
             print("Time for a short break!")
             mixer.init()
-            mixer.music.load('/Users/lmh/Downloads/Clock-chimes-sound/ting-tong.mp3')
+            mixer.music.load(r'ting-tong.mp3')
             mixer.music.play()
             time.sleep(4)
             mixer.music.stop()
@@ -55,4 +55,4 @@ def pomodoro_timer():
            break
 
 
-pomodoro_timer()
+# pomodoro_timer()
