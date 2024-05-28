@@ -24,15 +24,15 @@ while True:
     user_input = input("Which mode do you want to select: ")
 
     if user_input == "1":
-        prova()  # Call the function for default Pomodoro timer
+        prova()  
         break
 
     elif user_input == "2":
-        prova_CT()  # Call the function for custom time Pomodoro timer
+        prova_CT()  
         break
 
     elif user_input == "3":
-        stopwatch()  # Call the stopwatch function
+        stopwatch()  
         break
 
     else:
