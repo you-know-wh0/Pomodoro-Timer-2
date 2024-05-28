@@ -76,4 +76,4 @@ def pomodoro_timer():
             print("Sayonara!")
             break
 
-pomodoro_timer()
+# pomodoro_timer()
