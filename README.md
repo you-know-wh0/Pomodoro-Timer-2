@@ -19,3 +19,8 @@ git clone https://github.com/you-know-wh0/Pomodoro-Timer-2.git
 cd Pomodoro-Timer-2
 python setup.py sdist bdist_wheel
 pip install .
+```
+
+## Usage
+
+View `usage.md`

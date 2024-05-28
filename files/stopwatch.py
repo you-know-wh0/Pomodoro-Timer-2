@@ -1,11 +1,12 @@
 # stopwatch_function.py
+import sys
 import time
 import keyboard
 
 def customizable_timer():
     # Get timer duration from the user
     try:
-        duration_minutes = int(input("Enter the timer duration in minutes: "))
+        duration_minutes = int(input("Enter the timer duration in minutes: "))  if len(sys.argv) < 3 else int(sys.argv[2])
         if duration_minutes <= 0:
             raise ValueError("Duration must be a positive number.")
     except ValueError as e:

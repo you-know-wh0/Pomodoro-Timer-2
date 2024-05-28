@@ -1,8 +1,8 @@
 #starting of the project
-import time 
-from stopwatch_default import pomodoro_timer as prova 
-from stopwatch_custom_time import pomodoro_timer as prova_CT
-from stopwatch import customizable_timer as stopwatch
+import sys
+from .stopwatch_default import pomodoro_timer as prova 
+from .stopwatch_custom_time import pomodoro_timer as prova_CT
+from .stopwatch import customizable_timer as stopwatch
 import os
 def cls():
     os.system('cls' if os.name in ('nt', 'dos') else 'clear')
@@ -20,6 +20,21 @@ def start():
     """
     )
 
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "1":
+            prova()
+
+        elif sys.argv[1] == "2":
+            prova_CT()
+
+        elif sys.argv[1] == "3":
+            stopwatch()
+
+        else:
+            print("Invalid input. Please select a valid mode.")
+            return
+
+        return
 
     while True:
         user_input = input("Which mode do you want to select: ")

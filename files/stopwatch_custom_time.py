@@ -1,3 +1,4 @@
+import sys
 import time
 from pygame import mixer
 import os
@@ -13,7 +14,7 @@ def pomodoro_timer():
 
     while True:
         try:
-            work_minutes = int(input("Enter work duration in minutes: "))
+            work_minutes = int(input("Enter work duration in minutes: ")) if len(sys.argv) < 3 else int(sys.argv[2])
             if work_minutes <= 0:
                 print("Please enter a positive number for minutes.")
                 continue
