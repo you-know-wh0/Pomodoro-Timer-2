@@ -1,7 +1,3 @@
-
-### USAGE.md
-
-```markdown
 # Usage Guide for Pomodoro Timer
 
 This guide provides detailed instructions on how to use the Pomodoro Timer and Stopwatch functions included in the package.
@@ -14,29 +10,54 @@ The Pomodoro Timer helps you manage your work by breaking it into intervals of f
 
 1. Run the following command in your terminal:
 
-    ```sh
-    Pomodoro_Timer
-    ```
+   ```sh
+   Pomodoro_Timer
+   ```
 
 2. You will be prompted to enter the work duration in minutes. For example:
 
-    ```sh
-    Enter work duration in minutes: 25
-    ```
+   ```sh
+   Enter work duration in minutes: 25
+   ```
 
 3. The timer will start and display the countdown:
 
-    ```
-    Start working! Pomodoro timer started.
-    ```
+   ```
+   Start working! Pomodoro timer started.
+   ```
 
 4. When the work interval ends, you will hear an audible alert. The timer will then prompt you for a break:
 
-    ```
-    Time for a short break!
-    ```
+   ```
+   Time for a short break!
+   ```
 
 5. After four work intervals, you will have a longer break.
+
+### Command-line Arguments
+
+The application accepts a single command-line argument to select the mode of operation:
+
+1. Default mode. This starts a timer with a 25-minute focus period followed by a 5-minute break.
+
+```sh
+Pomodoro_Timer 1
+```
+
+2. Custom Time mode. This allows you to specify a custom focus and break time.
+
+```sh
+Pomodoro_Timer 2        # this will promt you to "Enter work duration"
+Pomodoro_Timer 2 1      # this will start 1 min timer 5 min break
+```
+
+3. Stopwatch mode. This starts a simple stopwatch.
+   If no argument is provided, or if the argument is not one of the above options, the application will prompt the user to select a mode interactively.
+
+```sh
+Pomodoro_Timer 3        # this will promt you to "Enter timer duration"
+Pomodoro_Timer 3 1      # this will start 1 min timer
+```
 
 ### Stopping the Pomodoro Timer
 
@@ -50,23 +71,23 @@ The Stopwatch function allows you to measure elapsed time.
 
 1. Run the following command in your terminal:
 
-    ```sh
-    Pomodoro_Timer stopwatch
-    ```
+   ```sh
+   Pomodoro_Timer stopwatch
+   ```
 
 2. The stopwatch will start and display the elapsed time:
 
-    ```
-    Stopwatch started. Press spacebar to stop.
-    ```
+   ```
+   Stopwatch started. Press spacebar to stop.
+   ```
 
 ### Stopping the Stopwatch
 
 - Press the `spacebar` to stop the stopwatch and display the final elapsed time:
 
-    ```
-    Stopwatch stopped.
-    ```
+  ```
+  Stopwatch stopped.
+  ```
 
 ## Customizing Intervals
 
@@ -84,3 +105,4 @@ Start working! Pomodoro timer started.
 ...
 00:00:01
 Time for a short break!
+```
