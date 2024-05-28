@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
@@ -7,7 +7,7 @@ setup(
     name="Pomodoro_Timer",
     version="0.9",
     description='CLI implementation of "Pomodoro Timer" written in Python',
-    py_modules=['files'],
+    # py_modules=['files'],
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/you-know-wh0/Pomodoro-Timer-2",
@@ -25,6 +25,8 @@ setup(
         ]
     },
     python_requires=">=3.10",
+    packages=find_packages(include=['Pomodoro_Timer', 'Pomodoro_Timer.*', 'files', 'files.*']),
+    include_package_data=True,
     install_requires=[
         "pygame",
         "keyboard",
