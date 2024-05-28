@@ -15,6 +15,7 @@ Pomodoro Timer is a command-line implementation of the Pomodoro Technique, writt
 Ensure you have Python 3.10 or higher installed. You can install the Pomodoro Timer package using the following steps:
 
 ```sh
-git clone https://github.com/Zamiul-rashid/Super-Tic-Tac-Toe.git
-cd Super-Tic-Tac-Toe
+git clone https://github.com/you-know-wh0/Pomodoro-Timer-2.git
+cd Pomodoro-Timer-2
+python setup.py sdist bdist_wheel
 pip install .
