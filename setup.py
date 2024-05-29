@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="Pomodoro_Timer",
-    version="0.9",
+    name="Pomodoro_AHP",
+    version="0.9.1",
     description='CLI implementation of "Pomodoro Timer" written in Python',
     # py_modules=['files'],
     long_description=long_description,
